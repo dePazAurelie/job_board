@@ -1,0 +1,40 @@
+@font-face
+{
+    font-family: 'courier_primeregular';
+    src: url('./ressources/courier_prime-webfont.woff2') format('woff2'),
+         url('./ressources/courier_prime-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html
+{
+    font-family: "courier_primeregular", Calibri, sans-serif;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+nav
+{
+    min-height: 63px;
+}
+
+#hidden1 {
+    display: none;
+}
+
+#hidden2 {
+    display: none;
+}
+
+#hidden3 {
+    display: none;
+}
