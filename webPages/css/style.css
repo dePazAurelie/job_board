@@ -1,0 +1,31 @@
+html
+{
+    font-family: Calibri, sans-serif;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+nav
+{
+    min-height: 63px;
+}
+
+#hidden1 {
+    display: none;
+}
+
+#hidden2 {
+    display: none;
+}
+
+#hidden3 {
+    display: none;
+}
