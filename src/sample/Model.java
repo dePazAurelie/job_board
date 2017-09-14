@@ -1,32 +1,12 @@
-package dataBaseInterface;
+package sample;
 import java.sql.*;
 
-public class DataBaseInterface {
+public class Model {
 
     private Connection connect = null;
     private Statement statement = null;
     private PreparedStatement preparedStatement = null;
     private ResultSet resultSet = null;
-
-    public static void main (String [] arg) throws SQLException {
-        DataBaseInterface dataInterface = new DataBaseInterface();
-        dataInterface.connect();
-        dataInterface.addTable();
-        dataInterface.close();
-    }
-
-    public void addTable() {
-        try {
-            connect = this.connect();
-            statement = connect.createStatement();
-            statement.setQueryTimeout(30);  // set timeout to 30 sec.
-
-            statement.executeUpdate("DROP TABLE IF EXISTS Learner");
-            statement.executeUpdate("CREATE TABLE Learner (id INTEGER, name string, age INTEGER, city string)");
-        } catch (SQLException e) {
-            System.out.println(e.getMessage());
-        }
-    }
 
     private Connection connect() {
         String url = "jdbc:sqlite:data.db";
