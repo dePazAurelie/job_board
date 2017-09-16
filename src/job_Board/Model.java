@@ -2,12 +2,16 @@ package job_Board;
 
 import javafx.collections.ObservableList;
 import java.sql.*;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
 import static javafx.collections.FXCollections.observableArrayList;
 
-public class Model {
+class Model {
 
     private Connection connect = null;
     private Statement statement = null;
+    private PreparedStatement preparedStatement = null;
     private ResultSet rs = null;
     private ObservableList<Advertisement> advertisementList = observableArrayList();
 
@@ -22,7 +26,7 @@ public class Model {
         return connection;
     }
 
-    public void setAdvertisementList() throws SQLException {
+    private void setAdvertisementList() throws SQLException {
         try {
             connect = this.connect();
             statement = connect.createStatement();
@@ -30,10 +34,10 @@ public class Model {
 
             rs = statement.executeQuery("SELECT * FROM Advertisements;");
             while (rs.next()) {
-                Advertisement advertisement = new Advertisement(rs.getString("Title"),
+                Advertisement advertisement = new Advertisement(rs.getInt("id"), rs.getString("Title"),
                         rs.getString("companyName"), rs.getString("advertisementText"),
                         rs.getString("Location"), rs.getString("parutionDate"),
-                        rs.getString("contractType"), rs.getString("post"),
+                        rs.getString("contractType"),
                         rs.getString("experienceAsked"), rs.getString("salary"),
                         rs.getString("contactName"), rs.getString("contactEmail"));
                 advertisementList.add(advertisement);
@@ -42,11 +46,11 @@ public class Model {
                 System.err.println(e.getMessage());
             }
         finally {
-            connect.close();
+            close();
         }
     }
 
-    public ObservableList<Advertisement> getAdvertisementArray() {
+    ObservableList<Advertisement> getAdvertisementArray() {
         try {
             this.setAdvertisementList();
         } catch (SQLException e) {
@@ -55,17 +59,48 @@ public class Model {
         return advertisementList;
     }
 
-    private void modifydvertisement(){
+    void modifyAdvertisement(Advertisement advertisement){
 
     }
 
-    private void deletedvertisement() {
+    void deleteAdvertisement(int id) throws SQLException {
+        String sql = "DELETE FROM Advertisements WHERE id = ?";
 
+        try {
+            connect = this.connect();
+            preparedStatement = connect.prepareStatement(sql);
+
+            preparedStatement.setInt(1, id);
+            preparedStatement.executeUpdate();
+
+        } catch(SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        finally {
+            close();
+        }
     }
 
-    private void addAdvertisement() {
 
+    void addAdvertisement(Advertisement advertisement) throws SQLException {
+        String sql = "INSERT INTO Advertisements(Title, companyName, advertisementText, Location, parutionDate," +
+                "contractType, experienceAsked, salary, contactName, contactEmail)" +
+                "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+
+        try {
+            connect = this.connect();
+            preparedStatement = connect.prepareStatement(sql);
+            preparation(advertisement);
+            preparedStatement.executeUpdate();
+
+        } catch(SQLException e) {
+            System.err.println(e.getMessage());
+        }
+        finally {
+            close();
+        }
     }
+
 
     private void close() {
         try {
@@ -75,9 +110,27 @@ public class Model {
             if (statement != null) {
                 statement.close();
             }
+            if (preparedStatement != null) {
+                preparedStatement.close();
+            }
             if (connect != null) {
                 connect.close();
             }
         } catch (Exception ignored) {}
+    }
+
+    private void preparation (Advertisement advertisement) throws SQLException {
+        String date = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
+
+        preparedStatement.setString(1, advertisement.getTitle());
+        preparedStatement.setString(2, advertisement.getCompany());
+        preparedStatement.setString(3, advertisement.getText());
+        preparedStatement.setString(4, advertisement.getLocation());
+        preparedStatement.setString(5, date);
+        preparedStatement.setString(6, advertisement.getContract());
+        preparedStatement.setString(7, advertisement.getExperience());
+        preparedStatement.setString(8, advertisement.getSalary());
+        preparedStatement.setString(9, advertisement.getContactName());
+        preparedStatement.setString(10, advertisement.getContactEmail());
     }
 }
