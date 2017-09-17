@@ -9,23 +9,12 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
 import java.net.URL;
+import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 
 public class Controller implements Initializable {
     private Model model = new Model();
-
-    public void editButtonPushed() {
-
-    }
-
-    public void newButtonPushed() {
-
-    }
-
-    public void deleteButtonPushed() {
-
-    }
 
     @FXML
     private Label AdvertisementLabel;
@@ -66,31 +55,11 @@ public class Controller implements Initializable {
     public void initialize(URL location, ResourceBundle resources) {
         dateColumn.setCellValueFactory(new PropertyValueFactory<>("date"));
         titleColumn.setCellValueFactory(new PropertyValueFactory<>("title"));
-        tableView.setItems(model.getAdvertisementArray());
-
-        AdvertisementLabel.setText("Select a advertisement :");
-        companyLabel.setText("");
-        titleLabel.setText("");
-        textLabel.setText("");
-        LocationLabel.setText("");
-        contractLabel.setText("");
-        experienceLabel.setText("");
-        salaryLabel.setText("");
-        contactNameLabel.setText("");
-        contactEmailLabel.setText("");
+        loadTableView();
 
         tableView.getSelectionModel().selectedItemProperty().addListener((observableValue, oldValue, newValue) -> {
             if (tableView.getSelectionModel().getSelectedItem() != null) {
-                AdvertisementLabel.setText(tableView.getSelectionModel().getSelectedItem().getTitle());
-                companyLabel.setText(tableView.getSelectionModel().getSelectedItem().getCompany());
-                titleLabel.setText(tableView.getSelectionModel().getSelectedItem().getTitle());
-                textLabel.setText(tableView.getSelectionModel().getSelectedItem().getText());
-                LocationLabel.setText(tableView.getSelectionModel().getSelectedItem().getLocation());
-                contractLabel.setText(tableView.getSelectionModel().getSelectedItem().getContract());
-                experienceLabel.setText(tableView.getSelectionModel().getSelectedItem().getExperience());
-                salaryLabel.setText(tableView.getSelectionModel().getSelectedItem().getSalary());
-                contactNameLabel.setText(tableView.getSelectionModel().getSelectedItem().getContactName());
-                contactEmailLabel.setText(tableView.getSelectionModel().getSelectedItem().getContactEmail());
+                fillLabels(tableView.getSelectionModel().getSelectedItem());
             }
         });
 
@@ -100,7 +69,14 @@ public class Controller implements Initializable {
                 Parent root1 = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
+
+                editWindowController controller = fxmlLoader.getController();
+                controller.initData(tableView.getSelectionModel().getSelectedItem());
+
                 stage.show();
+
+                stage.setOnHiding( event -> loadTableView());
+
             } catch (Exception er) {
                 er.printStackTrace();
             }
@@ -113,9 +89,58 @@ public class Controller implements Initializable {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
                 stage.show();
+
+                stage.setOnHiding( event -> loadTableView());
+
             } catch (Exception er) {
                 er.printStackTrace();
             }
         });
+
+        deleteButton.setOnAction(e -> {
+            try {
+                model.deleteAdvertisement(tableView.getSelectionModel().getSelectedItem().getId());
+                loadTableView();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+        });
+    }
+
+    private void fillLabels(Advertisement advertisement) {
+        AdvertisementLabel.setText(advertisement.getTitle());
+        companyLabel.setText(advertisement.getCompany());
+        titleLabel.setText(advertisement.getTitle());
+        textLabel.setText(advertisement.getText());
+        LocationLabel.setText(advertisement.getLocation());
+        contractLabel.setText(advertisement.getContract());
+        experienceLabel.setText(advertisement.getExperience());
+        salaryLabel.setText(advertisement.getSalary());
+        contactNameLabel.setText(advertisement.getContactName());
+        contactEmailLabel.setText(advertisement.getContactEmail());
+    }
+
+    private void loadTableView() {
+        for ( int i = 0; i < tableView.getItems().size(); i++) {
+            tableView.getItems().clear();
+        }
+
+        tableView.setItems(model.getAdvertisementArray());
+
+        AdvertisementLabel.setText("");
+        companyLabel.setText("");
+        titleLabel.setText("");
+        textLabel.setText("");
+        LocationLabel.setText("");
+        contractLabel.setText("");
+        experienceLabel.setText("");
+        salaryLabel.setText("");
+        contactNameLabel.setText("");
+        contactEmailLabel.setText("");
+
+        if (tableView.getItems().size() > 0) {
+            tableView.getSelectionModel().selectFirst();
+            fillLabels(tableView.getSelectionModel().getSelectedItem());
+        }
     }
 }

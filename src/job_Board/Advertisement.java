@@ -1,7 +1,5 @@
 package job_Board;
 
-import javafx.beans.property.SimpleStringProperty;
-
 public class Advertisement {
 
     private int id;
@@ -11,22 +9,35 @@ public class Advertisement {
     private String location;
     private String date;
     private String contract;
-    private String post;
     private String experience;
     private String salary;
     private String contactName;
     private String contactEmail;
 
-    public Advertisement(String title, String company, String text, String location, String date,
-                         String contract, String post, String experience, String salary, String contactName,
+    public Advertisement(int id, String title, String company, String text, String location, String date,
+                         String contract, String experience, String salary, String contactName,
                          String contactEmail) {
+        this.id = id;
         this.title = title;
         this.company = company;
         this.text = text;
         this.location = location;
         this.date = date;
         this.contract = contract;
-        this.post = post;
+        this.experience = experience;
+        this.salary = salary;
+        this.contactName = contactName;
+        this.contactEmail = contactEmail;
+    }
+
+    public Advertisement(String title, String company, String text, String location,
+                         String contract, String experience, String salary, String contactName,
+                         String contactEmail) {
+        this.title = title;
+        this.company = company;
+        this.text = text;
+        this.location = location;
+        this.contract = contract;
         this.experience = experience;
         this.salary = salary;
         this.contactName = contactName;
@@ -35,10 +46,6 @@ public class Advertisement {
 
     public int getId() {
         return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public String getTitle() {
@@ -77,24 +84,12 @@ public class Advertisement {
         return date;
     }
 
-    public void setDate(String date) {
-        this.date = date;
-    }
-
     public String getContract() {
         return contract;
     }
 
     public void setContract(String contract) {
         this.contract = contract;
-    }
-
-    public String getPost() {
-        return post;
-    }
-
-    public void setPost(String post) {
-        this.post = post;
     }
 
     public String getExperience() {
