@@ -7,23 +7,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c4de72-b51f-47ee-bd06-cd45fe7bf879" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JobBoard/sample/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JobBoard/sample/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JobBoard/sample/Model.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/JobBoard/sample/Window.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/META-INF/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Advertisement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Controller.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/EditWindow.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Model.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Window.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/editWindowController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/newWindow.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/newWindowController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/JobBoard.iml" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data.db" afterPath="$PROJECT_DIR$/data.db" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Advertisement.class" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/Advertisement.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Controller.class" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/Controller.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Main.class" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/Main.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Model.class" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/Model.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Aurélie_de_Paz.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Aurélie_de_Paz.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/EditWindow.fxml" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/EditWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/Window.fxml" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/Window.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/job_board/job_Board/newWindow.fxml" afterPath="$PROJECT_DIR$/out/production/job_board/job_Board/newWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/Advertisement.java" afterPath="$PROJECT_DIR$/src/job_Board/Advertisement.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/Controller.java" afterPath="$PROJECT_DIR$/src/job_Board/Controller.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/EditWindow.fxml" afterPath="$PROJECT_DIR$/src/job_Board/EditWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/Main.java" afterPath="$PROJECT_DIR$/src/job_Board/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/Model.java" afterPath="$PROJECT_DIR$/src/job_Board/Model.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/Window.fxml" afterPath="$PROJECT_DIR$/src/job_Board/Window.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/job_Board/newWindow.fxml" afterPath="$PROJECT_DIR$/src/job_Board/newWindow.fxml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webPages/css/style.css" afterPath="$PROJECT_DIR$/webPages/css/style.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webPages/index.html" afterPath="$PROJECT_DIR$/webPages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webPages/js/jobBoard.js" afterPath="$PROJECT_DIR$/webPages/js/jobBoard.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,24 +53,22 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/job_Board/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="100">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+                <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Advertisement.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Advertisement.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/job_Board/Advertisement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#1723#1724#0" expanded="true" />
-                <element signature="e#1753#1754#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="175">
+              <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,41 +76,23 @@
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/job_Board/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="12" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-                <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-                <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-                <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+                <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="newWindow.fxml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/job_Board/newWindow.fxml">
+      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/job_Board/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2525">
-              <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="newWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/job_Board/newWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+            <state relative-caret-position="1425">
+              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
               <folding>
-                <marker date="1505659442562" expanded="true" signature="951:1807" ph="{...}" />
-                <marker date="1505659442562" expanded="true" signature="992:1648" ph="{...}" />
-                <marker date="1505659442562" expanded="true" signature="1690:1799" ph="{...}" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -117,35 +101,13 @@
       <file leaf-file-name="Window.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/job_Board/Window.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+            <state relative-caret-position="75">
+              <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
               <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
             <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/job_Board/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editWindowController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/job_Board/editWindowController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-              <folding />
-            </state>
           </provider>
         </entry>
       </file>
@@ -255,7 +217,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
   </component>
@@ -408,7 +370,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51932000" />
+    <option name="totallyTimeSpent" value="51753000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="83" y="-11" width="1848" height="1102" extended-state="6" />
@@ -438,36 +400,13 @@
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Execution Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="DBHelper" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972667" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19957082" sideWeight="0.5043812" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39914164" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="DB Browser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972667" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251073" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32939914" sideWeight="0.49561885" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20810515" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="DBOutput" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -541,10 +480,7 @@
           <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -554,7 +490,8 @@
         <state relative-caret-position="125">
           <caret line="5" column="30" lean-forward="false" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -563,10 +500,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2100">
           <caret line="84" column="5" lean-forward="false" selection-start-line="84" selection-start-column="5" selection-end-line="84" selection-end-column="5" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -575,9 +509,7 @@
         <state relative-caret-position="1175">
           <caret line="54" column="39" lean-forward="true" selection-start-line="54" selection-start-column="39" selection-end-line="54" selection-end-column="39" />
           <folding>
-            <marker date="1505659442562" expanded="true" signature="951:1807" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="992:1648" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="1690:1799" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -608,7 +540,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1175">
           <caret line="52" column="68" lean-forward="true" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -618,10 +552,7 @@
           <caret line="56" column="32" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="56" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -641,7 +572,8 @@
         <state relative-caret-position="150">
           <caret line="6" column="27" lean-forward="false" selection-start-line="6" selection-start-column="27" selection-end-line="6" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -650,10 +582,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="18" lean-forward="true" selection-start-line="0" selection-start-column="18" selection-end-line="0" selection-end-column="18" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -662,9 +591,7 @@
         <state relative-caret-position="1025">
           <caret line="41" column="13" lean-forward="false" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
-            <marker date="1505659442562" expanded="true" signature="951:1807" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="992:1648" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="1690:1799" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -695,7 +622,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="800">
           <caret line="37" column="32" lean-forward="true" selection-start-line="37" selection-start-column="32" selection-end-line="37" selection-end-column="32" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -705,10 +634,7 @@
           <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -728,7 +654,8 @@
         <state relative-caret-position="275">
           <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -737,10 +664,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1000">
           <caret line="40" column="33" lean-forward="false" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -749,9 +673,7 @@
         <state relative-caret-position="1025">
           <caret line="41" column="13" lean-forward="true" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
           <folding>
-            <marker date="1505659442562" expanded="true" signature="951:1807" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="992:1648" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="1690:1799" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -782,7 +704,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="900">
           <caret line="41" column="68" lean-forward="false" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -792,10 +716,7 @@
           <caret line="72" column="44" lean-forward="false" selection-start-line="72" selection-start-column="44" selection-end-line="72" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -825,10 +746,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="24" column="27" lean-forward="true" selection-start-line="24" selection-start-column="27" selection-end-line="24" selection-end-column="27" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -858,7 +776,8 @@
         <state relative-caret-position="275">
           <caret line="11" column="39" lean-forward="false" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -869,10 +788,7 @@
           <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -882,7 +798,8 @@
         <state relative-caret-position="250">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -893,10 +810,7 @@
           <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -938,8 +852,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/newWindow.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2525">
-          <caret line="101" column="0" lean-forward="false" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+        <state relative-caret-position="250">
+          <caret line="10" column="45" lean-forward="false" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
           <folding />
         </state>
       </provider>
@@ -949,9 +863,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/editWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="26" lean-forward="false" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-          <folding />
+        <state relative-caret-position="509">
+          <caret line="52" column="68" lean-forward="false" selection-start-line="52" selection-start-column="68" selection-end-line="52" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -991,30 +907,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/newWindowController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        <state relative-caret-position="216">
+          <caret line="44" column="39" lean-forward="true" selection-start-line="44" selection-start-column="39" selection-end-line="44" selection-end-column="39" />
           <folding>
-            <marker date="1505659442562" expanded="true" signature="951:1807" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="992:1648" ph="{...}" />
-            <marker date="1505659442562" expanded="true" signature="1690:1799" ph="{...}" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="100">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <marker date="1505589213726" expanded="false" signature="338:344" ph=" }" />
+            <marker date="1505589213726" expanded="true" signature="435:727" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/Window.fxml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="40" lean-forward="false" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        <state relative-caret-position="75">
+          <caret line="3" column="41" lean-forward="false" selection-start-line="3" selection-start-column="41" selection-end-line="3" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1024,8 +939,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
+        <state relative-caret-position="1425">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1034,26 +949,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/Model.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="164" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1505659442547" expanded="true" signature="3337:3569" ph="INSERT INTO Advertisements... " />
-            <marker date="1505659442547" expanded="true" signature="3953:4355" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="4439:5191" ph="{...}" />
-            <marker date="1505659442547" expanded="true" signature="5278:6032" ph="{...}" />
+            <marker date="1505656141638" expanded="true" signature="6026:6032" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/job_Board/Advertisement.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#1723#1724#0" expanded="true" />
-            <element signature="e#1753#1754#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="175">
+          <caret line="7" column="13" lean-forward="true" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
