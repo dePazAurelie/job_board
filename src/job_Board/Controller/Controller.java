@@ -11,6 +11,7 @@ import javafx.stage.Stage;
 import job_Board.Model;
 
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -67,21 +68,36 @@ public class Controller implements Initializable {
         });
 
         editButton.setOnAction(e -> {
-            try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/EditWindow.fxml"));
-                Parent root1 = fxmlLoader.load();
+            if (tableView.getSelectionModel().getSelectedItem() != null) {
+                try {
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/EditWindow.fxml"));
+                    Parent root1 = fxmlLoader.load();
+                    Stage stage = new Stage();
+                    stage.setScene(new Scene(root1));
+
+                    editWindowController controller = fxmlLoader.getController();
+                    controller.initData(tableView.getSelectionModel().getSelectedItem());
+
+                    stage.show();
+
+                    stage.setOnHiding(event -> loadTableView());
+
+                } catch (Exception er) {
+                    er.printStackTrace();
+                }
+            } else {
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/errorWindow.fxml"));
+                Parent error = null;
+
+                try {
+                    error = fxmlLoader.load();
+                } catch (IOException e1) {
+                    e1.printStackTrace();
+                }
+
                 Stage stage = new Stage();
-                stage.setScene(new Scene(root1));
-
-                Controller.editWindowController controller = fxmlLoader.getController();
-                controller.initData(tableView.getSelectionModel().getSelectedItem());
-
+                stage.setScene(new Scene(error));
                 stage.show();
-
-                stage.setOnHiding( event -> loadTableView());
-
-            } catch (Exception er) {
-                er.printStackTrace();
             }
         });
 
@@ -101,12 +117,27 @@ public class Controller implements Initializable {
         });
 
         deleteButton.setOnAction(e -> {
+            if (tableView.getItems().size() > 0) {
+                try {
+                    model.deleteAdvertisement(tableView.getSelectionModel().getSelectedItem().getId());
+                    loadTableView();
+                } catch (SQLException e1) {
+                    e1.printStackTrace();
+                }
+            } else {
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/errorWindow.fxml"));
+            Parent error = null;
+
             try {
-                model.deleteAdvertisement(tableView.getSelectionModel().getSelectedItem().getId());
-                loadTableView();
-            } catch (SQLException e1) {
+                error = fxmlLoader.load();
+            } catch (IOException e1) {
                 e1.printStackTrace();
             }
+
+            Stage stage = new Stage();
+            stage.setScene(new Scene(error));
+            stage.show();
+        }
         });
     }
 
