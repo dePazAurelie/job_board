@@ -16,7 +16,7 @@ class Model {
     private ObservableList<Advertisement> advertisementList = observableArrayList();
 
     private Connection connect() {
-        String url = "jdbc:sqlite:data_test.db";
+        String url = "jdbc:sqlite:data.db";
         Connection connection = null;
         try {
             connection = DriverManager.getConnection(url);
@@ -37,9 +37,9 @@ class Model {
                 Advertisement advertisement = new Advertisement(rs.getInt("id"), rs.getString("Title"),
                         rs.getString("companyName"), rs.getString("advertisementText"),
                         rs.getString("Location"), rs.getString("parutionDate"),
-                        rs.getString("contractType"), rs.getString("experienceAsked"),
-                        rs.getString("salary"), rs.getString("contactName"),
-                        rs.getString("contactEmail"));
+                        rs.getString("contractType"),
+                        rs.getString("experienceAsked"), rs.getString("salary"),
+                        rs.getString("contactName"), rs.getString("contactEmail"));
                 advertisementList.add(advertisement);
             }
         } catch(SQLException e) {

@@ -42,64 +42,62 @@
             </header>
             
             <section id = "jobs">
-                <div class="card">
-                    <div class="card-content" ng-repeat = "single in packageNames">
-                        <h4>
-                            Développeur informatique : spécialité Java
-                        </h4>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>
-                            <br>
-                            <span class = "bold">Entreprise :</span> Capgemini
-                        </p>
-                                    
-                        <ul class="collapsible" data-collapsible="accordion">
-                            <li>
-                                <div class="collapsible-header">
-                                    <i class="material-icons">fingerprint</i>Learn more !
+                <div class="row section">
+                    <div class="col s12 orange lighten-5">
+                        <div class="card">
+                            <div class="card-content">
+                                <h4>
+                                    Développeur informatique : spécialité Java
+                                </h4>
+                                <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                </p>
+                                <p class = "bold">
+                                    Entreprise : Capgemini
+                                </p>
+                                <div class = "hid" id = "hidden">
+                                    <p>
+                                    <br>
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Lieu : Suresnes
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Date de parution : 13/09/2017
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Type de contrat : CDI
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Type de poste : Développeur en informatique
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Expérience demandée : Aucune
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Salaire : 38 k€ brut
+                                    </p>
+                                    <p>
+                                        <br>
+                                        Contacter : M. Durant
+                                        <br>
+                                        Email : @
+                                    </p>
                                 </div>
-                                <div class="collapsible-body">
-                                    <div>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Description :</span><br>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Date de parution :</span> 13/09/2017
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Lieu :</span> Suresnes
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Type de contrat :</span> CDI
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Expérience demandée :</span> Aucune
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Salaire :</span> 38 k€ brut
-                                        </p>
-                                        <p>
-                                            <br>
-                                            <span class = "bold">Contacter :</span> M. Durant
-                                            <br>
-                                            <span class = "bold">Email :</span> @
-                                        </p>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>                            
-                    </div>
-                    <div class="card-action">
-                        <a class="orange lighten-1 waves-effect waves-light btn">Apply</a>
+                            </div>
+          
+                            <div class="card-action">
+                                <a id = "show" class="orange lighten-1 waves-effect waves-light btn">Learn more</a>
+                                <a class="orange lighten-1 waves-effect waves-light btn">Apply</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -113,9 +111,13 @@
                 </p>
             </footer>
         </div>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="js/jobBoard.js"></script>
+        
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+        <script src="js/jobBoard.js"></script>
+        
     </body>
 
 </html>
