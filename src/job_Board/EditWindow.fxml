@@ -93,8 +93,8 @@
             </Label>
             <ButtonBar layoutX="73.0" layoutY="482.0" prefHeight="53.0" prefWidth="331.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="482.0">
                 <buttons>
-                    <Button fx:id="saveButton" mnemonicParsing="false" text="Save" />
-                    <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Cancel" />
+                    <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
+                    <Button fx:id="saveButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Save" />
                 </buttons>
             </ButtonBar>
     </children>

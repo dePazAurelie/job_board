@@ -4,8 +4,6 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
-import job_Board.Advertisement;
-import job_Board.Model;
 
 import java.net.URL;
 import java.sql.SQLException;

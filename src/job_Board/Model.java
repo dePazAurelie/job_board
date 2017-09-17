@@ -1,14 +1,13 @@
 package job_Board;
 
 import javafx.collections.ObservableList;
-
 import java.sql.*;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import static javafx.collections.FXCollections.observableArrayList;
 
-public class Model {
+class Model {
 
     private Connection connect = null;
     private Statement statement = null;
@@ -27,7 +26,7 @@ public class Model {
         return connection;
     }
 
-    protected void setAdvertisementList() throws SQLException {
+    private void setAdvertisementList() throws SQLException {
         try {
             connect = this.connect();
             statement = connect.createStatement();
@@ -51,7 +50,7 @@ public class Model {
         }
     }
 
-    public ObservableList<Advertisement> getAdvertisementArray() {
+    ObservableList<Advertisement> getAdvertisementArray() {
         try {
             this.setAdvertisementList();
         } catch (SQLException e) {
@@ -60,7 +59,7 @@ public class Model {
         return advertisementList;
     }
 
-    public void modifyAdvertisement(Advertisement advertisement){
+    void modifyAdvertisement(Advertisement advertisement){
         String sql = "UPDATE Advertisements SET Title = ? , companyName = ?, advertisementText = ?, Location = ?, parutionDate = ?," +
                 "contractType = ?, experienceAsked = ?, salary = ?, contactName = ?, contactEmail = ? WHERE id = ?;";
 
@@ -78,7 +77,7 @@ public class Model {
         }
     }
 
-    public void deleteAdvertisement(int id) throws SQLException {
+    void deleteAdvertisement(int id) throws SQLException {
         String sql = "DELETE FROM Advertisements WHERE id = ?";
 
         try {
@@ -97,7 +96,7 @@ public class Model {
     }
 
 
-    public void addAdvertisement(Advertisement advertisement) throws SQLException {
+    void addAdvertisement(Advertisement advertisement) throws SQLException {
         String sql = "INSERT INTO Advertisements(Title, companyName, advertisementText, Location, parutionDate," +
                 "contractType, experienceAsked, salary, contactName, contactEmail)" +
                 "VALUES(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
