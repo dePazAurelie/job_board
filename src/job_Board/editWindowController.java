@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -67,7 +68,7 @@ public class editWindowController implements Initializable {
         advertisement.setContactEmail(contactEmailTextField.getText());
     }
 
-    void initData(Advertisement advertisement) {
+    public void initData(Advertisement advertisement) {
         this.advertisement = advertisement;
         companyTextField.setText(advertisement.getCompany());
         titleTextField.setText(advertisement.getTitle());

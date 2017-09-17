@@ -93,8 +93,8 @@
         </Label>
         <ButtonBar layoutX="73.0" layoutY="482.0" prefHeight="53.0" prefWidth="331.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="73.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="482.0">
             <buttons>
-                <Button fx:id="cancelButton" mnemonicParsing="false" text="Cancel" />
-                <Button fx:id="createButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Create" />
+                <Button fx:id="createButton" mnemonicParsing="false" text="Create" />
+                <Button fx:id="cancelButton" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="Cancel" />
             </buttons>
         </ButtonBar>
     </children>
