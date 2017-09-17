@@ -10,7 +10,7 @@ import java.util.ResourceBundle;
 
 public class editWindowController implements Initializable {
     private Model model = new Model();
-    Advertisement advertisement;
+    private Advertisement advertisement;
 
     @FXML
     private TextField titleTextField;
@@ -40,13 +40,13 @@ public class editWindowController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
-        saveButton.setOnAction(e -> {
 
+        saveButton.setOnAction(e -> {
+            modifyAd();
             model.modifyAdvertisement(advertisement);
 
             Stage stage = (Stage) saveButton.getScene().getWindow();
             stage.close();
-
         });
 
         cancelButton.setOnAction(e -> {
@@ -55,7 +55,21 @@ public class editWindowController implements Initializable {
         });
     }
 
+    private void modifyAd() {
+        advertisement.setCompany(companyTextField.getText());
+        advertisement.setTitle(titleTextField.getText());
+        advertisement.setText(textTextArea.getText());
+        advertisement.setLocation(LocationTextField.getText());
+        advertisement.setContract(contractTextField.getText());
+        advertisement.setExperience(experienceTextField.getText());
+        advertisement.setSalary(salaryTextField.getText());
+        advertisement.setContactName(contactNameTextField.getText());
+        advertisement.setContactEmail(contactEmailTextField.getText());
+
+    }
+
     void initData(Advertisement advertisement) {
+        this.advertisement = advertisement;
         companyTextField.setText(advertisement.getCompany());
         titleTextField.setText(advertisement.getTitle());
         textTextArea.setText(advertisement.getText());
