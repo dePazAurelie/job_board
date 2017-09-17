@@ -1,0 +1,19 @@
+html
+{
+    font-family: Calibri, sans-serif;
+}
+
+.italic
+{
+    font-style: italic;
+}
+
+.bold
+{
+    font-weight: bold;
+}
+
+nav
+{
+    min-height: 63px;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>The Job Board</title>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/css/materialize.min.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    </head>
+
+    <body class="orange lighten-5">
+        <div class = "container">
+            <header class="card-panel orange lighten-3 center-align row">
+                <h1 class="col s9">Job board</h1>
+                
+                <nav class = "col s3 orange lighten-2">
+                    <div class ="nav-wrapper">
+                        
+                        <ul class="right">
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons prefix">home</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons prefix">person</i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="material-icons prefix">mail</i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+            
+            <section id = "jobs">
+                <div class="card">
+                    <div class="card-content" ng-repeat = "single in packageNames">
+                        <h4>
+                            Développeur informatique : spécialité Java
+                        </h4>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        </p>
+                        <p>
+                            <br>
+                            <span class = "bold">Entreprise :</span> Capgemini
+                        </p>
+                                    
+                        <ul class="collapsible" data-collapsible="accordion">
+                            <li>
+                                <div class="collapsible-header">
+                                    <i class="material-icons">fingerprint</i>Learn more !
+                                </div>
+                                <div class="collapsible-body">
+                                    <div>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Description :</span><br>
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Date de parution :</span> 13/09/2017
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Lieu :</span> Suresnes
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Type de contrat :</span> CDI
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Expérience demandée :</span> Aucune
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Salaire :</span> 38 k€ brut
+                                        </p>
+                                        <p>
+                                            <br>
+                                            <span class = "bold">Contacter :</span> M. Durant
+                                            <br>
+                                            <span class = "bold">Email :</span> @
+                                        </p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>                            
+                    </div>
+                    <div class="card-action">
+                        <a class="orange lighten-1 waves-effect waves-light btn">Apply</a>
+                    </div>
+                </div>
+            </section>
+            
+            <footer class="card-panel orange lighten-3 center-align">
+                <p class="italic">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <p class = "bold">
+                    Le créateur du site
+                </p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="js/jobBoard.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.0/js/materialize.min.js"></script>
+    </body>
+
+</html>
