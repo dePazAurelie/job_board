@@ -65,12 +65,12 @@ public class Controller implements Initializable {
 
         editButton.setOnAction(e -> {
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("editWindow.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EditWindow.fxml"));
                 Parent root1 = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
 
-                editWindowController controller = fxmlLoader.getController();
+                Controller.editWindowController controller = fxmlLoader.getController();
                 controller.initData(tableView.getSelectionModel().getSelectedItem());
 
                 stage.show();
