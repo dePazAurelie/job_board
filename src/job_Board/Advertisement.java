@@ -1,7 +1,5 @@
 package job_Board;
 
-import javafx.beans.property.SimpleStringProperty;
-
 public class Advertisement {
 
     private int id;
@@ -50,15 +48,11 @@ public class Advertisement {
         return id;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-
     String getTitle() {
         return title;
     }
 
-    public void setTitle(String title) {
+    void setTitle(String title) {
         this.title = title;
     }
 
@@ -66,7 +60,7 @@ public class Advertisement {
         return company;
     }
 
-    public void setCompany(String company) {
+    void setCompany(String company) {
         this.company = company;
     }
 
@@ -74,7 +68,7 @@ public class Advertisement {
         return text;
     }
 
-    public void setText(String text) {
+    void setText(String text) {
         this.text = text;
     }
 
@@ -82,23 +76,19 @@ public class Advertisement {
         return location;
     }
 
-    public void setLocation(String location) {
+    void setLocation(String location) {
         this.location = location;
     }
 
-    public String getDate() {
+    String getDate() {
         return date;
-    }
-
-    public void setDate(String date) {
-        this.date = date;
     }
 
     String getContract() {
         return contract;
     }
 
-    public void setContract(String contract) {
+    void setContract(String contract) {
         this.contract = contract;
     }
 
@@ -106,7 +96,7 @@ public class Advertisement {
         return experience;
     }
 
-    public void setExperience(String experience) {
+    void setExperience(String experience) {
         this.experience = experience;
     }
 
@@ -114,7 +104,7 @@ public class Advertisement {
         return salary;
     }
 
-    public void setSalary(String salary) {
+    void setSalary(String salary) {
         this.salary = salary;
     }
 
@@ -122,7 +112,7 @@ public class Advertisement {
         return contactName;
     }
 
-    public void setContactName(String contactName) {
+    void setContactName(String contactName) {
         this.contactName = contactName;
     }
 
@@ -130,7 +120,7 @@ public class Advertisement {
         return contactEmail;
     }
 
-    public void setContactEmail(String contactEmail) {
+    void setContactEmail(String contactEmail) {
         this.contactEmail = contactEmail;
     }
 }
