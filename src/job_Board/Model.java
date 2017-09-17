@@ -60,21 +60,7 @@ class Model {
     }
 
     void modifyAdvertisement(Advertisement advertisement){
-        String sql = "UPDATE Advertisements SET Title = ? , companyName = ?, advertisementText = ?, Location = ?, parutionDate = ?," +
-                "contractType = ?, experienceAsked = ?, salary = ?, contactName = ?, contactEmail = ? WHERE id = ?;";
 
-        try {
-            connect = this.connect();
-            preparedStatement = connect.prepareStatement(sql);
-            modifyPreparation(advertisement);
-            preparedStatement.executeUpdate();
-
-        } catch(SQLException e) {
-            System.err.println(e.getMessage());
-        }
-        finally {
-            close();
-        }
     }
 
     void deleteAdvertisement(int id) throws SQLException {
@@ -104,7 +90,7 @@ class Model {
         try {
             connect = this.connect();
             preparedStatement = connect.prepareStatement(sql);
-            addPreparation(advertisement);
+            preparation(advertisement);
             preparedStatement.executeUpdate();
 
         } catch(SQLException e) {
@@ -133,7 +119,7 @@ class Model {
         } catch (Exception ignored) {}
     }
 
-    private void addPreparation (Advertisement advertisement) throws SQLException {
+    private void preparation (Advertisement advertisement) throws SQLException {
         String date = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
 
         preparedStatement.setString(1, advertisement.getTitle());
@@ -146,19 +132,5 @@ class Model {
         preparedStatement.setString(8, advertisement.getSalary());
         preparedStatement.setString(9, advertisement.getContactName());
         preparedStatement.setString(10, advertisement.getContactEmail());
-    }
-
-    private void modifyPreparation (Advertisement advertisement) throws SQLException {
-        preparedStatement.setString(1, advertisement.getTitle());
-        preparedStatement.setString(2, advertisement.getCompany());
-        preparedStatement.setString(3, advertisement.getText());
-        preparedStatement.setString(4, advertisement.getLocation());
-        preparedStatement.setString(5, advertisement.getDate());
-        preparedStatement.setString(6, advertisement.getContract());
-        preparedStatement.setString(7, advertisement.getExperience());
-        preparedStatement.setString(8, advertisement.getSalary());
-        preparedStatement.setString(9, advertisement.getContactName());
-        preparedStatement.setString(10, advertisement.getContactEmail());
-        preparedStatement.setInt(11, advertisement.getId());
     }
 }

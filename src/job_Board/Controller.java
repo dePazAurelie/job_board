@@ -1,5 +1,6 @@
 package job_Board;
 
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -8,6 +9,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import javafx.stage.WindowEvent;
+
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -120,7 +123,7 @@ public class Controller implements Initializable {
         contactEmailLabel.setText(advertisement.getContactEmail());
     }
 
-    private void loadTableView() {
+    void loadTableView() {
         for ( int i = 0; i < tableView.getItems().size(); i++) {
             tableView.getItems().clear();
         }

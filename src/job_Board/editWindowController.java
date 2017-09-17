@@ -65,6 +65,7 @@ public class editWindowController implements Initializable {
         advertisement.setSalary(salaryTextField.getText());
         advertisement.setContactName(contactNameTextField.getText());
         advertisement.setContactEmail(contactEmailTextField.getText());
+
     }
 
     void initData(Advertisement advertisement) {
