@@ -46,7 +46,7 @@ public class Advertisement {
         this.contactEmail = contactEmail;
     }
 
-    int getId() {
+    public int getId() {
         return id;
     }
 
@@ -54,7 +54,7 @@ public class Advertisement {
         this.id = id;
     }
 
-    String getTitle() {
+    public String getTitle() {
         return title;
     }
 
@@ -62,7 +62,7 @@ public class Advertisement {
         this.title = title;
     }
 
-    String getCompany() {
+    public String getCompany() {
         return company;
     }
 
@@ -70,7 +70,7 @@ public class Advertisement {
         this.company = company;
     }
 
-    String getText() {
+    public String getText() {
         return text;
     }
 
@@ -78,7 +78,7 @@ public class Advertisement {
         this.text = text;
     }
 
-    String getLocation() {
+    public String getLocation() {
         return location;
     }
 
@@ -94,7 +94,7 @@ public class Advertisement {
         this.date = date;
     }
 
-    String getContract() {
+    public String getContract() {
         return contract;
     }
 
@@ -102,7 +102,7 @@ public class Advertisement {
         this.contract = contract;
     }
 
-    String getExperience() {
+    public String getExperience() {
         return experience;
     }
 
@@ -110,7 +110,7 @@ public class Advertisement {
         this.experience = experience;
     }
 
-    String getSalary() {
+    public String getSalary() {
         return salary;
     }
 
@@ -118,7 +118,7 @@ public class Advertisement {
         this.salary = salary;
     }
 
-    String getContactName() {
+    public String getContactName() {
         return contactName;
     }
 
@@ -126,7 +126,7 @@ public class Advertisement {
         this.contactName = contactName;
     }
 
-    String getContactEmail() {
+    public String getContactEmail() {
         return contactEmail;
     }
 
