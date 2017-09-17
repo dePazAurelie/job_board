@@ -17,7 +17,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws IOException, SQLException {
         Parent root;
-        root = FXMLLoader.load(getClass().getResource("Window.fxml"));
+        root = FXMLLoader.load(getClass().getResource("View/Window.fxml"));
         Scene scene = new Scene(root);
         primaryStage.setTitle("Database Browser");
         primaryStage.setScene(scene);

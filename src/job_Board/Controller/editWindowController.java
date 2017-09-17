@@ -1,9 +1,10 @@
-package job_Board;
+package job_Board.Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import job_Board.Model;
 
 import java.net.URL;
 import java.util.ResourceBundle;

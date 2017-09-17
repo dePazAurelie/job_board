@@ -1,4 +1,4 @@
-package job_Board;
+package job_Board.Controller;
 
 public class Advertisement {
 

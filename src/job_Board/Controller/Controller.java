@@ -1,4 +1,4 @@
-package job_Board;
+package job_Board.Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -8,6 +8,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.stage.Stage;
+import job_Board.Model;
+
+
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ResourceBundle;
@@ -65,7 +68,7 @@ public class Controller implements Initializable {
 
         editButton.setOnAction(e -> {
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("EditWindow.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/EditWindow.fxml"));
                 Parent root1 = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));
@@ -84,7 +87,7 @@ public class Controller implements Initializable {
 
         newButton.setOnAction(e -> {
             try {
-                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("newWindow.fxml"));
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("../View/newWindow.fxml"));
                 Parent root1 = fxmlLoader.load();
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root1));

@@ -1,6 +1,7 @@
 package job_Board;
 
 import javafx.collections.ObservableList;
+import job_Board.Controller.Advertisement;
 
 import java.sql.*;
 import java.text.SimpleDateFormat;
