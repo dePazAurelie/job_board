@@ -99,7 +99,55 @@
                         </ul>                            
                     </div>
                     <div class="card-action">
-                        <a class="orange lighten-1 waves-effect waves-light btn">Apply</a>
+                        <a data-target="modal1" class="orange lighten-1 waves-effect waves-light btn modal-trigger" href="#modal1">Apply</a>
+                        
+                        <div id="modal1" class="modal modal-fixed-footer">
+                            <div class="modal-content">
+                                <h4>Your profile :</h4>
+                                <div class="row">
+                                    <form class="col s12">
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="material-icons prefix">account_circle</i>
+                                                <input id="firstName" type="text" class="validate">
+                                                <label for="firstName">First Name</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <input id="lastName" type="text" class="validate">
+                                                <label for="lastName">Last Name</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="material-icons prefix">phone</i>
+                                                <input id="phone" type="tel" class="validate">
+                                                <label for="phone">Phone Number</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <i class="material-icons prefix">mail</i>
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">E-mail</label>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="input-field col s6">
+                                                <i class="material-icons prefix">Profession</i>
+                                                <input id="prof" type="text" class="validate">
+                                                <label for="prof">Profession</label>
+                                            </div>
+                                            <div class="input-field col s6">
+                                                <i class="material-icons prefix">mail</i>
+                                                <input id="email" type="email" class="validate">
+                                                <label for="email">E-mail</label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <a href="#!" class="orange lighten-1 white-text modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
